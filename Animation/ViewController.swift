@@ -179,7 +179,9 @@ extension UIView {
 
         newPoint = newPoint.applying(transform)
         oldPoint = oldPoint.applying(transform)
-
+        
+        /* this is for change position for spend object only change position and anchorPoint without this code change anchorPoint but position no
+         
         var position = layer.position
 
         position.x -= oldPoint.x
@@ -189,6 +191,7 @@ extension UIView {
         position.y += newPoint.y
 
         layer.position = position
+         */
         layer.anchorPoint = point
     }
     
